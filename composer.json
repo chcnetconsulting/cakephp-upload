@@ -1,0 +1,34 @@
+{
+    "name": "chcnet/cakephp-upload",
+    "description": "CakePHP 4.x plugin to handle file uploading sans ridiculous automagic",
+    "type": "cakephp-plugin",
+    "keywords": ["cakephp", "upload", "files", "behavior", "orm"],
+    "homepage": "https://github.com/sdtorresl/cakephp-upload",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jose Diaz-Gonzalez",
+            "email": "cakephp+upload@josediazgonzalez.com"
+        }
+    ],
+    "require": {
+        "cakephp/cakephp": "^4.0",
+        "league/flysystem": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~8.5.0",
+        "league/flysystem-vfs": "*",
+        "cakephp/cakephp-codesniffer": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Josegonzalez\\Upload\\": "src",
+            "Josegonzalez\\Upload\\Test\\Fixture\\": "tests\\Fixture"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Josegonzalez\\Upload\\Test\\": "tests"
+        }
+    }
+}
